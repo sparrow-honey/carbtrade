@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .buy{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid red; */
+            flex-direction: column;position: absolute;
+            top: 20%;
+        }
+        a{
+            height: 20px ;
+            width: 200px;
+            color: black;
+            background-color: gold;
+            text-align: center;
+            margin-top: 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 20px;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="buy"><h1>BUY THIS PRODUCT @Rs ....</h1>
+    <!-- <a href="" onclick="return showAlert()">BUY NOW</a> -->
+     <a href="main.html" onclick="return confirmNavigation()">BUY NOW</a>
+    <!-- <a  id="buynow"href="public/main.html">BUY NOW</a></div> -->
+</body>
+
+
+<script>
+  function confirmNavigation() {
+    // Show a confirm dialog with Yes/No options
+    const userConfirmed = confirm("DO YOU WANT EXTRA DISCOUNT BY LATE DELIVERY AND PROMOTE GREENERY. ");
+    
+    // If user clicks "OK" (true), navigation proceeds
+    // If user clicks "Cancel" (false), navigation stops
+    return userConfirmed;
+  }
+</script>
+</html>
