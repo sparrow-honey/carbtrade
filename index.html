@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Search Results - DemoShop</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f3f3f3;
+    }
+
+    header {
+      background-color: #232f3e;
+      padding: 10px 20px;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .search-bar {
+      flex: 1 1 100%;
+      margin-top: 10px;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      border: none;
+      font-size: 16px;
+    }
+
+    @media (min-width: 600px) {
+      .search-bar {
+        flex: 1 1 auto;
+        margin-top: 0;
+        margin-left: 20px;
+      }
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      width: 100%;
+      max-width: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .product-card:hover {
+      transform: scale(1.02);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      max-height: 200px;
+    }
+
+    .product-title {
+      font-size: 16px;
+      margin: 10px 0;
+      height: 40px;
+      overflow: hidden;
+    }
+
+    .price {
+      font-size: 18px;
+      color: #B12704;
+      margin-bottom: 10px;
+    }
+
+    .buy-now {
+      background-color: #ffa41c;
+      border: none;
+      padding: 10px 20px;
+      color: #111;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 3px;
+      width: 100%;
+    }
+    a{
+        background-color: #ffa41c;
+        width: 100%;
+        height: 10%;
+        /* font-family:  */
+        text-align: center;
+        text-decoration: none;
+        color:black;
+        font-weight: 100;
+        font-size: 14px;
+        padding-top: 5px;
+    }
+    a:hover
+
+    .buy-now:hover {
+      background-color: #f08804;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">AMAZON + ECO-BARGAIN</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for products...">
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="products">
+      <!-- Product Cards -->
+      <div class="product-card">
+        <img src="headphones.jpg" alt="Product 1">
+        <div class="product-title">Wireless Headphones</div>
+        <div class="price"></div>
+        <!-- <button type="submit" class="buy-now">Buy Now</button> -->
+        <a href="Go Green.html" onclick="return confirmNavigation()">BUY NOW</a>
+      </div>
+
+      <div class="product-card">
+        <img src="speaker.jpg" alt="Product 2">
+        <div class="product-title">Bluetooth Speaker</div>
+        <div class="price"></div>
+         <a href="Go Green.html" onclick="return confirmNavigation()">BUY NOW</a>
+      </div>
+
+      <div class="product-card">
+        <img src="smart watch.jpg" alt="Product 3">
+        <div class="product-title">Smart Watch</div>
+        <div class="price"></div>
+         <a href="Go Green.html" onclick="return confirmNavigation()">BUY NOW</a>
+      </div>
+
+      <div class="product-card">
+        <img src="mouse.jpg" alt="Product 4">
+        <div class="product-title">Gaming Mouse</div>
+        <div class="price"></div>
+         <a href="Go Green.html" onclick="return confirmNavigation()">BUY NOW</a>
+      </div>
+
+      <div class="product-card">
+        <img src="monitor.jpg" alt="Product 5">
+        <div class="product-title">4K Monitor</div>
+        <div class="price"></div>
+    <a href="Go Green.html" onclick="return confirmNavigation()">BUY NOW</a>
+      
+      </div>
+
+      <div class="product-card">
+        <img src="laptop.jpg" alt="Product 6">
+        <div class="product-title">HP VICTUS LAPTOP</div>
+        <div class="price"></div>
+        <a href="Go Green.html" onclick="return confirmNavigation()">BUY NOW</a>
+      </div>
+    </div>
+  </div>
+ <script>
+
+
+  function confirmNavigation() {
+    // Show a confirm dialog with Yes/No options
+    const userConfirmed = confirm("CHOOSING STANDARD DELIVERY WILL REWARD YOU WITH 10% OFF ON THIS ORDER ");
+    
+    // If user clicks "OK" (true), navigation proceeds
+    // If user clicks "Cancel" (false), navigation stops
+    return userConfirmed;
+  }
+</script>
+</body>
+</html>
